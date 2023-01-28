@@ -9,6 +9,9 @@ jobs:
 
   build:
     runs-on: ubuntu-latest
+    permissions:
+      # required for all workflows
+      security-events: write
     env:
       BUCKET_NAME: cfst-3457-cd31139c5eeeb306b-nonprodbucket-ksdjfiurweiru548
     steps:
